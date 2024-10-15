@@ -2,9 +2,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        // deklarasi variabel yang dibutuhkan
         String nama, nim, prodi;
         char confirmProdi;
 
+        // deklarasi variabel Scanner untuk menerima masukan atau input
         Scanner scanMe = new Scanner(System.in);
 
         prompt("Masukan nama: ");
@@ -18,13 +20,13 @@ public class Main {
         confirmProdi = scanMe.next().charAt(0);
 
         // if (confirm == '1') {
-        //     prodi = "Informatika";
+        // prodi = "Informatika";
         // } else if (confirm == '2') {
-        //     prodi = "Teknologi Informasi";
+        // prodi = "Teknologi Informasi";
         // } else if (confirm == '2') {
-        //     prodi = "Sistem Informasi";
+        // prodi = "Sistem Informasi";
         // } else {
-        //     prodi = "Kamu tidak memilih prodi";
+        // prodi = "Kamu tidak memilih prodi";
         // }
 
         prodi = switch (confirmProdi) {
