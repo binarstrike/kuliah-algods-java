@@ -1,0 +1,12 @@
+{
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": ["lib/**/*.jar"],
+  "editor.fontFamily": "ComicShannsMono Nerd Font",
+  "terminal.integrated.fontFamily": "ComicShannsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.inlayHints.enabled": "on",
+  "gradle.reuseTerminals": "all",
+  "editor.fontWeight": "900"
+}
