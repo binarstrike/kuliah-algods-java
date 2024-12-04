@@ -1,0 +1,11 @@
+{
+  "tab_size": 2,
+  "terminal": {
+    "shell": {
+      "with_arguments": {
+        "program": "pwsh",
+        "args": ["-wd", "~"]
+      }
+    }
+  }
+}
