@@ -7,5 +7,10 @@
   "vim.leader": "<Space>",
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "editor.inlayHints.enabled": "offUnlessPressed"
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "[java]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.java",
+    "editor.formatOnSaveMode": "file"
+  }
 }
