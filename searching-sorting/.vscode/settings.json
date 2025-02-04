@@ -1,0 +1,15 @@
+{
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": ["lib/**/*.jar"],
+  "editor.fontFamily": "ComicShannsMono Nerd Font",
+  "editor.fontSize": 18,
+  "vim.leader": "<Space>",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "[java]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  }
+}

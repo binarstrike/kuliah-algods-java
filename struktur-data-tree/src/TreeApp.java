@@ -9,9 +9,6 @@ class Node {
   public Node leftChild;
   public Node rightChild;
 
-  public Node() {
-  }
-
   public void displayNode() {
     System.out.printf("{ %d, %s }", this.id, this.data);
   }
@@ -205,7 +202,9 @@ class Tree {
       Stack<Node> localStack = new Stack<>();
       isRowEmpty = true;
 
-      System.out.print(" ".repeat(nBlanks));
+      for (int j = 0; j < nBlanks; j++) {
+        System.out.print(" ");
+      }
 
       while (globalStack.isEmpty() == false) {
         Node temp = globalStack.pop();
@@ -219,15 +218,16 @@ class Tree {
             isRowEmpty = false;
           }
         } else {
-          System.out.println("--");
+          System.out.print("--");
           localStack.push(null);
           localStack.push(null);
 
-          System.out.print(" ".repeat(nBlanks * 2 - 2));
+        }
+        for (int j = 0; j < nBlanks * 2 - 2; j++) {
+          System.out.print(" ");
         }
       }
-
-      System.out.println("");
+      System.out.println();
       nBlanks /= 2;
 
       while (localStack.isEmpty() == false) {
@@ -247,17 +247,18 @@ public class TreeApp {
     String data;
     Tree myTree = new Tree();
 
-    myTree.insert(1, "Binar Nugroho");
+    // Binar Nugroho - 24SA11A057
+    myTree.insert(10, "Binar Nugroho");
     myTree.insert(12, "Ucup");
     myTree.insert(16, "Dika");
-    myTree.insert(24, "Otong");
-    myTree.insert(32, "Asep");
-    myTree.insert(48, "Ujang");
-    myTree.insert(64, "Ani");
-    myTree.insert(128, "Fufu Fafa");
-    myTree.insert(192, "Rize");
-    myTree.insert(224, "Aoyama");
-    myTree.insert(240, "Midori");
+    myTree.insert(18, "Otong");
+    myTree.insert(20, "Asep");
+    myTree.insert(22, "Ujang");
+    myTree.insert(24, "Ani");
+    myTree.insert(26, "Fufu Fafa");
+    myTree.insert(28, "Rize");
+    myTree.insert(30, "Aoyama");
+    myTree.insert(32, "Midori");
 
     while (true) {
       System.out.print("Masukan huruf pertama dari pilihan aksi berikut.\ninsert, find, delete, traverse: ");
